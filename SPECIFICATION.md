@@ -8,7 +8,7 @@ This project falls primarily under the Human Resource Management Domain(HRM). Wh
 The current manual attendance tracking system at  is inefficient and unreliable, leading to inaccuracies in attendance records, increased administrative workload, and potential negative impacts on student performance. There is a need for an automated, secure, and user-friendly electronic attendance system to enhance accuracy, reduce administrative burden, and provide real-time data access for stakeholders.
 
 Objectives:
-• Teqcher Attendance Recording: Implement a system that teachers can  capture student attendance, minimizing manual intervention and errors.
+• Teacher Attendance Recording: Implement a system that teachers can  capture student attendance, minimizing manual intervention and errors.
 • Enhance Data Accuracy: Ensure precise and tamper-proof attendance records to reflect true student participation.
 • Reduce Administrative Workload: Streamline the attendance process to allow staff to focus on more critical educational tasks.
 • Provide Real-Time Access: Enable immediate access to attendance data for teachers, administrators, students, and parents.
