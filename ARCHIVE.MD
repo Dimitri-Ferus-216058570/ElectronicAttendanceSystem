@@ -107,7 +107,44 @@ UpdateElementStyle(EmailSystem, $bgColor="#647687", $fontColor="white", $borderC
 UpdateElementStyle(SchoolMainframe, $bgColor="#647687", $fontColor="white", $borderColor="#314354")
 ```
 ## Code Context Diagram(UML)
-```mermaid
 
+```mermaid
+classDiagram
+    class Teacher {
+        - teacherID
+        - name
+        - surname
+        - email
+        + viewAttendance()
+        + viewAttReport()
+    }
+
+    class Student {
+        - studentID
+        - name
+        - surname
+        - email
+        + viewAttReport()
+    }
+
+    class Parent {
+        - parentID
+        - name
+        - surname
+        - email
+        + viewAttReport()
+    }
+
+    class Attendance {
+        - Id
+        - studentname
+        + markAttendance()
+        + genAttReport()
+    }
+
+    Teacher --> Attendance : marks attendance using
+    Teacher --> Student : marks attendance
+    Parent --> Attendance : requests report
+    Student --> Attendance : requests report
 ```
 
