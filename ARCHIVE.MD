@@ -1,4 +1,4 @@
-# ElectronicAttendanceSystem
+# Electronic Attendance System
 
 ## System Context Diagram
 ```mermaid
