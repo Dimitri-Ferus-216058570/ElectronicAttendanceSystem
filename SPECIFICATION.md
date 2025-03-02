@@ -23,7 +23,7 @@ IDE to code the program, where Intellij Idea is the prefered IDE and the free st
 The application should be able to seamlessly integrate with the existing school system in order to ensure data consistency and streamline operations.
 
 ### User Acceptance:
-The success of the system will rely on the accpetance of teacher, students, administrative staff and the parents of the students. There may also be a need for training to be provided for the users of the system such as the teachers and administrative staff. 
+The success of the system will rely on the acceptance of teacher, students, administrative staff and the parents of the students. There may also be a need for training to be provided for the users of the system such as the teachers and administrative staff. 
 
 ### Operational and investment cost:
 Cost such as licencing, software development and extention of the system to encompass hardware such as RFID readers and biometric scanners should be taken into consideration.  For operational costs, maintenance costs, updates and training for new users should be taken into consideration.
