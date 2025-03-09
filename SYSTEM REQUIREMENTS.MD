@@ -17,6 +17,7 @@
 15. Should be able to integrate with the existing school mainframe.
 
 ## Non-Functional Requirements
+
 ### Usability: 
 The user interface shall be easy to understand and navigate. It shall make use of recognition instead of recall and be flexible to use.
 ### Deployability: 
@@ -31,5 +32,7 @@ The system will be updated regularly to ensure the system and OS security softwa
 Search results shall load within 1 second. Reports shall be loaded within 5-20 seconds.
 
 ## Reflection
+
+Some of the trade-offs that should be considered for all of the stakeholders is that convenience must be weighed against the security of their data. This is relevant in terms of keeping users’ data confidential. In order to keep data confidential and safe security must be stringent, such as encrypting data, using very strong passwords and multi factor authentication. Another trade-of is allowing students access to the system, which may cause disputes, therefore a proper procedure must be formalised in order to keep disputes to a minimum and prevent misuse. Using an electronic system may be new to certain teachers and in order to bridge this gap the user interface must be easy to use and understand and training sessions may also need to be provided. Consideration must be taken in accordance with the policies and laws regarding children and the policies of the Department of Education. The system must thus be designed and implemented within the framework of the law.
 
 
