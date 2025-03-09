@@ -1,7 +1,10 @@
 ## Functional Requirements
 1.The system should allow users to be registered and deleted.
+
 2. Users should be registered and given system privileges according to their role (i.e. teachers can mark attendance, parents may only view their children’s reports).
+
 3. Teachers should be granted privileges to mark and update attendance.
+
 4. The system should compile weekly, monthly reports on attendance.
 5. The system should be able to track attendance and recognise absenteeism patterns.
 6. Notifications on attendance should be sent on a month-to-month basis and patterns should be identified in the reports.
