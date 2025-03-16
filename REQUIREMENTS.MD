@@ -35,7 +35,7 @@ graph TD;
     Department_of_Education --> View_Graph;
 ```
 
-![Diagram](Attendance Use Case Diagram B.png)
+![Diagram](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/Attendance%20Use%20Case%20Diagram%20B.png)
 
 
 
