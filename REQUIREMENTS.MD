@@ -1,5 +1,29 @@
 ## System Requirements
 
+## User Stories
+1.The Teacher actor can initiate the “Mark Attendance” use case, where a student’s attendance will be marked using the system. 
+
+2. The Administrator actor can initiate the “Register User” use case, where users will need to complete a form with their details in order for the Administrator to register them on the system. The Administrator will register users in order to filter and keep unauthorized users from registering and viewing students’ data. 
+3. The Administrator actor can initiate the “Delete User” use case, where a identified user is deleted from the system.
+
+
+4. The Teacher, Principal, Student, Administrator and Parent actors can initiate the "Log In/Log out" out use case in order to have access to the system according to their user privileges. 
+
+5. The Teacher, Principal, Student, Administrator, Parent, Department of Education Department actors are able to initiate the "View Report" use case, in order to view reports about learner attendance. The Education Department actor will also receive reports based on the schedule of the said department. 
+
+6. The Teacher and Administrator actor can initiate the “View Student Profile” use case in order to view a student’s information. This may be used to gain access to the student or their parents contact details in order to contact them. 
+
+7. The Teacher and Administrator actors can initiate the "Search Students" use case in order to search for a specific student in order to view or edit their profile. 
+
+8. The Principal, Administrator and Department of Education can initiate the "View Graph" use case in order to view attendance reports in a graphical manner. 
+
+9.  The Teacher and Administrator actors can initiate the "Modify Attendance" use case in order to modify a student’s attendance if errors may have been made. 
+
+10. The Administrator actor can initiate the "Notifications" use case in order to send notifications about absenteeism patterns or school related notifications to the parents. This use case may also be classified as a temporal event due to the system being able to send reports on a monthly or weekly basis or if an absenteeism pattern has been identified.
+
+
+
+## Use Case Specifications
 1.Use Case: Mark Attendance 
 
 Actor:  Teacher
