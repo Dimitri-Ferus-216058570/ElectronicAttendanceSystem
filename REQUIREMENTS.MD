@@ -1,9 +1,13 @@
 ## System Requirements
 
 1.Use Case: Mark Attendance 
+
 Actor:  Teacher
-Precondition:  Teacher is logged in. 
+
+Precondition:  Teacher is logged in.
+
 Postcondition:  Students Attendance is marked of the current date 
+
 Basic Flow: 
 1.	Teacher logs into the system.
 2.	Navigates to the attendance marking section.
@@ -11,6 +15,7 @@ Basic Flow:
 4.	Marks students as present or absent.
 5.	Saves the attendance record.
 6.	System updates attendance records.
+
 Alternative Flows:	Exceptions may be that the System is unable to capture attendance, or the teacher selects a future or wrong date.
 
 
