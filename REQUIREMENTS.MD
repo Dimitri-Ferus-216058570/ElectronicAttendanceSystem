@@ -34,7 +34,8 @@ graph TD;
     Department_of_Education --> View_Report;
     Department_of_Education --> View_Graph;
 ```
-![Diagram](Attendance Use Case Diagram New.png)
+
+![Diagram](Attendance Use Case Diagram B.png)
 
 
 
