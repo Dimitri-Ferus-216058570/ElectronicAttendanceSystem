@@ -37,6 +37,7 @@ graph TD;
 
 ![Diagram](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/Attendance%20Use%20Case%20Diagram%20B.png)
 ![Diagram](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/AttendanceAdmin.png)
+![Diagram](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/LastStakeholders.png)
 
 
 ## System Requirements
