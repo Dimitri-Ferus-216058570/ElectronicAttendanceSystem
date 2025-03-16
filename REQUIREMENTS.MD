@@ -18,8 +18,6 @@ Basic Flow:
 
 Alternative Flows:	Exceptions may be that the System is unable to capture attendance, or the teacher selects a future or wrong date.
 
-
-
 2. Use Case: Register User
 
 Actor: Administrator
@@ -66,7 +64,6 @@ Basic Flow:
 
 Alternative Flows:  User may not have privileges to view reports.
 
-
 5. Use Case: View Student Profile 
 
 Actor: Teacher and Administrator 
@@ -82,7 +79,6 @@ Basic Flow:
 4.	User selects a student to view full details.
 
 Alternative Flows:  Student of profile not found error.
-
 
 6. Use Case: Search Students 
 
@@ -115,7 +111,6 @@ Basic Flow:
 4.	User can analyse patterns and export the graph if needed.
 
 Alternative Flows:  No data found error.
-
 
 8. Use Case: Modify Attendance 
 
