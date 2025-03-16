@@ -1,11 +1,11 @@
 ## System Requirements
 
 ## User Stories
-1.The Teacher actor can initiate the “Mark Attendance” use case, where a student’s attendance will be marked using the system. 
+1. The Teacher actor can initiate the “Mark Attendance” use case, where a student’s attendance will be marked using the system. 
 
 2. The Administrator actor can initiate the “Register User” use case, where users will need to complete a form with their details in order for the Administrator to register them on the system. The Administrator will register users in order to filter and keep unauthorized users from registering and viewing students’ data. 
-3. The Administrator actor can initiate the “Delete User” use case, where a identified user is deleted from the system.
 
+3. The Administrator actor can initiate the “Delete User” use case, where a identified user is deleted from the system.
 
 4. The Teacher, Principal, Student, Administrator and Parent actors can initiate the "Log In/Log out" out use case in order to have access to the system according to their user privileges. 
 
@@ -24,7 +24,7 @@
 
 
 ## Use Case Specifications
-1.Use Case: Mark Attendance 
+1. Use Case: Mark Attendance 
 
 Actor:  Teacher
 
