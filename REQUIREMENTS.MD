@@ -35,6 +35,7 @@ graph TD;
     Parent --> Notifications_(Email);
     Department_of_Education --> View_Report;
     Department_of_Education --> View_Graph;
+```
 
 
 ## User Stories
