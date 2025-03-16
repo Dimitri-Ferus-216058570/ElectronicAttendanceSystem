@@ -1,7 +1,7 @@
 ## Functional Test Cases
 
-| Test Case ID | Requirement ID | Description | Steps | Expected Result |
-|-------------|---------------|-------------|-------|----------------|
+| Test Case ID | Requirement ID | Description | Steps | Expected Result |  Actual Result |  Status(Pass/Fail) |
+|-------------|---------------|-------------|-------|----------------|----------------|----------------|
 | TC-001 | FR-001 | Mark Attendance | 1. Teacher logs in. <br> 2. Navigates to attendance section. <br> 3. Selects class and date. <br> 4. Marks attendance. <br> 5. Saves the record. | Attendance successfully recorded and updated. |
 | TC-002 | FR-002 | Register New User | 1. Admin logs in. <br> 2. Navigates to user management. <br> 3. Inputs user details. <br> 4. Assigns privileges. <br> 5. Saves user profile. | New user account created, and email notification sent. |
 | TC-003 | FR-002 | Delete User | 1. Admin logs in. <br> 2. Searches for user. <br> 3. Confirms deletion. <br> 4. System removes user. | User removed and access revoked. |
