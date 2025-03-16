@@ -1,4 +1,4 @@
-##System Requirements
+## System Requirements
 
 1.Use Case: Mark Attendance 
 Actor:  Teacher
