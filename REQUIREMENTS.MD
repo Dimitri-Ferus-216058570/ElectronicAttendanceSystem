@@ -1,5 +1,3 @@
-## System Requirements
-
 ```mermaid
 graph TD;
     Administrator["Administrator"];
@@ -36,7 +34,7 @@ graph TD;
     Department_of_Education --> View_Report;
     Department_of_Education --> View_Graph;
 ```
-
+## System Requirements
 
 ## User Stories
 1. The Teacher actor can initiate the “Mark Attendance” use case, where a student’s attendance will be marked using the system. 
