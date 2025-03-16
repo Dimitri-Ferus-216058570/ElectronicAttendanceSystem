@@ -8,8 +8,7 @@
 | TC-004 | FR-003 | User Login | 1. User navigates to login page. <br> 2. Inputs credentials. <br> 3. System verifies and grants access. | User successfully logs in with correct privileges. |
 | TC-005 | FR-004 | View Report | 1. User logs in. <br> 2. Navigates to reports section. <br> 3. Selects report type. <br> 4. Views/downloads report. | Report displayed/downloaded based on user privileges. |
 | TC-006 | FR-005 | View Student Profile | 1. Actor logs in. <br> 2. Searches for student. <br> 3. Selects student profile. | Student details displayed. |
-| TC-007 | FR-006 | Send Notifications | 1. System generates report. <br> 2. Identifies patterns. <br> 3. Sends notification to parents/teachers. | Notifications sent successfully. |
-| TC-008 | FR-007 | Search Student | 1. Actor logs in. <br> 2. Enters search criteria. <br> 3. System retrieves student details. | Student profile found and displayed. |
+| TC-008 | FR-006 | Search Student | 1. Actor logs in. <br> 2. Enters search criteria. <br> 3. System retrieves student details. | Student profile found and displayed. |
 | TC-009 | FR-008 | View Graph | 1. Actor logs in. <br> 2. Navigates to reports. <br> 3. Selects graph option. | Graph generated successfully. |
-| TC-010 | FR-009 | Modify Attendance | 1. Actor logs in. <br> 2. Searches for attendance record. <br> 3. Updates record. <br> 4. Saves changes. | Attendance record updated successfully. |
+| TC-010 | FR-008 | Modify Attendance | 1. Actor logs in. <br> 2. Searches for attendance record. <br> 3. Updates record. <br> 4. Saves changes. | Attendance record updated successfully. |
 
