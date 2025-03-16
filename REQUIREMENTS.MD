@@ -1,5 +1,42 @@
 ## System Requirements
 
+```mermaid
+graph TD;
+    Administrator["Administrator"];
+    Teacher["Teacher"];
+    Parent["Parent"];
+    Student["Student"];
+    Department_of_Education["Department of Education"];
+    Principal["Principal"];
+    Register_User("Register User");
+    Notifications_(Email)("Notifications (Email)");
+    View_Student_Profile("View Student Profile");
+    Search_Student("Search Student");
+    Modify_Attendance("Modify Attendance");
+    Delete_User("Delete User");
+    View_Report("View Report");
+    View_Graph("View Graph");
+    Log_In/Out("Log In/Out");
+    Mark_Attendance("Mark Attendance");
+
+    Teacher --> Mark_Attendance;
+    Teacher --> View_Report;
+    Teacher --> View_Student_Profile;
+    Teacher --> Search_Student;
+    Teacher --> Modify_Attendance;
+    Principal --> View_Report;
+    Principal --> View_Graph;
+    Administrator --> Register_User;
+    Administrator --> Delete_User;
+    Administrator --> Log_In/Out;
+    Administrator --> Notifications_(Email);
+    Student --> Log_In/Out;
+    Student --> View_Student_Profile;
+    Parent --> Notifications_(Email);
+    Department_of_Education --> View_Report;
+    Department_of_Education --> View_Graph;
+
+
 ## User Stories
 1. The Teacher actor can initiate the “Mark Attendance” use case, where a student’s attendance will be marked using the system. 
 
