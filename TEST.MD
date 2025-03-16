@@ -11,4 +11,6 @@
 | TC-008 | FR-006 | Search Student | 1. Actor logs in. <br> 2. Enters search criteria. <br> 3. System retrieves student details. | Student profile found and displayed. |
 | TC-009 | FR-008 | View Graph | 1. Actor logs in. <br> 2. Navigates to reports. <br> 3. Selects graph option. | Graph generated successfully. |
 | TC-010 | FR-008 | Modify Attendance | 1. Actor logs in. <br> 2. Searches for attendance record. <br> 3. Updates record. <br> 4. Saves changes. | Attendance record updated successfully. |
+| TC-011 | NFR-001 | Performance Test - Concurrent Users | 1. Simulate 1,000 users accessing the system to mark attendance. | The system should handle the load without crashing, and response time should be ≤ 2 seconds. |
+| TC-012 | NFR-002 | Performance Test - Student Search | 1. User searches for a particular student. | The system should return search results in ≤ 2 seconds. |
 
