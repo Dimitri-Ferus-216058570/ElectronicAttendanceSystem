@@ -1,4 +1,4 @@
-## PS!! Not all user stories in the below tables were added to the backlog, as some appeared to be redundant.
+## PS!! Not all user stories in the below tables were added to the backlog in Github Issues and Projects, as some appeared to be redundant.
 # User Stories
 
 | Story ID | User Story | Acceptance Criteria | Priority |
