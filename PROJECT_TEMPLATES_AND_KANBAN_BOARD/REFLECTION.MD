@@ -4,7 +4,7 @@ Some of the challenges faced in choosing a template was the fact that I have nev
 
 ## Comparing other Tools
 
-Trello 
+### Trello 
 Trello has many categories of templates such as Business Templates, Design Templates, Engineering, etc. For the software engineering templates it has a vast variety such as, Swift developer roadmap, Site reliability, etc. It seems to have a big variety of templates but what may deter some software engineers from using it is that it seems to also have a paid version that shows that you may not have access to certain functions of the site.
 
 Jira
