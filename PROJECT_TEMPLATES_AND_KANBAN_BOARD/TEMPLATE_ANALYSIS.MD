@@ -6,3 +6,5 @@
 | **Bug Tracker**     | Track and triage bugs.                            | To Triage, Backlog, Ready, In Progress, In Review, Done | Automatically laves issues and moves them based on their priority. | Suitable for agile teams that manage bug backlogs. |
 | **Automatic Kanban** | Visualise the status of projects and limit work in progress. | Ready, In Progress, In Review, Done            | Automatically moves issues based on their state and closes completed tasks. | Suitable for agile and supports sprint tracking. |
 | **Iterative Development** | Plan your current and upcoming iterations as your work through your backlog | Backlog, Ready, In Progress, In Review, Done | Automation of task progression. | Suitable for agile teams following iterative development. |
+
+Justification for choosing Automated Kanban
