@@ -1,4 +1,4 @@
-# Template Comparison Table
+## Template Comparison Table
 | Template Name         | Description                                      | Columns and Workflows                            | Automation                                         | Suitability                                      |
 |----------------------|--------------------------------------------------|-------------------------------------------------|--------------------------------------------------|------------------------------------------------|
 | **Team Planning**   | Used to manage a team’s jobs and cycles and understand the team. | To Do, In Progress, Done                        | Automatically assigns tasks and moves based on status updates. | Suitable for agile teams that run sprints and plans workflows. |
@@ -7,4 +7,7 @@
 | **Automatic Kanban** | Visualise the status of projects and limit work in progress. | Ready, In Progress, In Review, Done            | Automatically moves issues based on their state and closes completed tasks. | Suitable for agile and supports sprint tracking. |
 | **Iterative Development** | Plan your current and upcoming iterations as your work through your backlog | Backlog, Ready, In Progress, In Review, Done | Automation of task progression. | Suitable for agile teams following iterative development. |
 
-Justification for choosing Automated Kanban
+## Justification for choosing Automated Kanban
+
+## Readme
+I’ve added a “Testing” column in order to track the testing of features to ensure that testing becomes part of the project and isn’t left for the end of the project or before integration. It will also assist in making the team aware that testing the product or feature is not something that should be overlooked. I’ve also added a “Code Review” in order to ensure that peer review is done in the project. It is implemented in order to facilitate quality control and to encourage collaboration between team members. Doing peer reviews will help team members to learn from each other and to identify that another set of eyes will help in creating a better product and may also avoid bad habits that may have been learnt without the team member knowing. The column would also ensure that the errors are identified early and may assist in reducing work later on in the project.
