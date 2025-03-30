@@ -26,7 +26,7 @@ I’ve added a “Testing” column in order to track the testing of features to
 
 ![Alt Text](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/PROJECT_TEMPLATES_AND_KANBAN_BOARD/Assignees.png)
 
-![Alt Text]()
+![Alt Text](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/PROJECT_TEMPLATES_AND_KANBAN_BOARD/Assignees.png)
 
 ![Alt Text]()
 
