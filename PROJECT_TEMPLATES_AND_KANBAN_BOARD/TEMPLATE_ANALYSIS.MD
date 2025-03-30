@@ -16,6 +16,8 @@ I’ve added a “Testing” column in order to track the testing of features to
 ## Kanban Screenshots
 ![Alt text](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/PROJECT_TEMPLATES_AND_KANBAN_BOARD/Roadmap.png)
 
+![Alt Text](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/PROJECT_TEMPLATES_AND_KANBAN_BOARD/Issues%201.png)
+
 
 
 
