@@ -20,7 +20,7 @@ I’ve added a “Testing” column in order to track the testing of features to
 
 ![Alt Text](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/PROJECT_TEMPLATES_AND_KANBAN_BOARD/Issues%202.png)
 
-![Alt Text]()
+![Alt Text](https://github.com/Dimitri-Ferus-216058570/ElectronicAttendanceSystem/blob/main/PROJECT_TEMPLATES_AND_KANBAN_BOARD/Linked%20Backlog1.png)
 
 ![Alt Text]()
 
