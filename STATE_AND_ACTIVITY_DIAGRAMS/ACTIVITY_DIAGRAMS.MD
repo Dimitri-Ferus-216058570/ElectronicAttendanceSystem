@@ -54,3 +54,40 @@ flowchart TD
       K --> L((End))
     end
 ```
+
+## Display Report as a Graph
+```mermaid
+flowchart TD
+    %% Admin Actions
+    subgraph Admin [Admin]
+      A[Logged In]
+      B[Attendance Menu]
+      C[Create Report]
+    end
+
+    %% System Processes
+    subgraph System [System]
+      D[Display Report Creation Page]
+      E[Input Report Parameters]
+      F{Valid Parameters?}
+      G[Display Report]
+      H[Choose Visual Display Format]
+      I[Chooses Graph]
+      J[Renders Graph]
+      K[View Graph]
+    end
+
+    %% Flow Connections
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -- No --> D
+    F -- Yes --> G
+    G --> H
+    H -- Yes --> I
+    I --> J
+    J --> K
+    K --> L((End))
+```
