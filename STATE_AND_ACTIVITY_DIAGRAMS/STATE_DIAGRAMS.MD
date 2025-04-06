@@ -13,7 +13,18 @@
 ### Attendance
 
 ```mermaid
-
+stateDiagram-v2
+    [*] --> MarkAttendanceMenu
+    MarkAttendanceMenu --> SelectClass : choose class
+    SelectClass --> IsValidClass : validate selection
+    IsValidClass --> SelectStudents : Yes
+    IsValidClass --> SelectClass : No
+    SelectStudents --> MarkAttendance : students selected
+    MarkAttendance --> Save : record attendance
+    Save --> Submit : confirm & save
+    Submit --> UpdateDatabase : send data
+    UpdateDatabase --> ConfirmSuccess : data updated
+    ConfirmSuccess --> [*]
 ```
 ### Attendance
 ```mermaid
