@@ -4,29 +4,37 @@
 
 ```mermaid
 flowchart TD
-    A((Start))
-    B[Mark Attendance Menu]
-    C[Select Class]
-    D{Is Valid Class?}
-    E[Select Students]
-    F[Mark Attendance]
-    G[Save]
-    H[Submit]
-    I[Update Database]
-    J[Confirm Success]
-    K((End))
-    
-    A --> B
-    B --> C
-    C --> D
-    D -- Yes --> E
-    D -- No --> C
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
+  %% Teacher Swimlane
+  subgraph Teacher [Teacher Actions]
+      T0((Start))
+      T1[Mark Attendance Menu]
+      T2[Select Class]
+      T3[Select Students]
+      T4[Mark Attendance]
+      T5[Save]
+      T6[Submit]
+      T_end((End))
+  end
+
+  %% System Swimlane
+  subgraph System [System Processes]
+      D[Is Valid Class?]
+      S1[Update Database]
+      S2[Confirm Success]
+  end
+
+  %% Flow Connections
+  T0 --> T1
+  T1 --> T2
+  T2 --> D
+  D -- Yes --> T3
+  D -- No --> T2
+  T3 --> T4
+  T4 --> T5
+  T5 --> T6
+  T6 --> S1
+  S1 --> S2
+  S2 --> T_end
 ```
 
 ### Create Report 
@@ -205,4 +213,32 @@ flowchart TD
 ```
 ### Update an Attendance Record
 ```mermaid
+flowchart TD
+  %% Teacher Lane
+  subgraph Teacher [Teacher Actions]
+      T1((Start))
+      T2[Attendance Menu]
+      T3[Input Search Parameters]
+      T4[Open Student Profile]
+      T5[Update Attendance]
+      T_end((End))
+  end
+
+  %% System Lane
+  subgraph System [System Processes]
+      S1[Search Page]
+      D[If valid User?]
+      S2[Display User Profile]
+  end
+
+  %% Flow Connections
+  T1 --> T2
+  T2 -- "Initiate Search" --> S1
+  S1 --> T3
+  T3 --> D
+  D -- Yes --> T4
+  D -- No --> S1
+  T4 --> S2
+  S2 --> T5
+  T5 --> T_end
 ```
