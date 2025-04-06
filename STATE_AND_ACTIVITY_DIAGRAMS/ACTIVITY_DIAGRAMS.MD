@@ -1,7 +1,8 @@
 ## Activity Diagrams
 
-### Marking Attendance 
+### Marking Attendance
 
+```mermaid
 flowchart TD
     A((Start))
     B[Mark Attendance Menu]
@@ -26,3 +27,4 @@ flowchart TD
     H --> I
     I --> J
     J --> K
+```
