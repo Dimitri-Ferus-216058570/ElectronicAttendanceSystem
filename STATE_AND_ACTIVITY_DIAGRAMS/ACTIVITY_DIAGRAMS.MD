@@ -91,3 +91,118 @@ flowchart TD
     J --> K
     K --> L((End))
 ```
+
+### Assign Privileges
+```mermaid
+flowchart TD
+  %% Admin Work
+  subgraph Admin [Admin]
+    A[Start]
+    B[Log In]
+    C[User Management Page]
+    D[Select Modify User]
+    E[Select User]
+    F[Modify User]
+    G[Assign Privileges]
+  end
+
+  %% System Work
+  subgraph System [System]
+    H[Display Users]
+    I[Display User Information]
+    J[Update Privileges]
+    K[Notify User]
+  end
+
+  %% Process Flow
+  A --> B
+  B --> C
+  C --> D
+  %% Admin initiates modify user which triggers a system action:
+  D -- "Request user list" --> H
+  H -- "Return list" --> E
+  E -- "User selected" --> I
+  I -- "Show details" --> F
+  F --> G
+  %% Privileges assignment triggers system update and notification:
+  G -- "Submit privileges" --> J
+  J --> K
+  K --> L((End))
+```
+### Register a New User
+```mermaid
+flowchart TD
+  %% Admin Work
+  subgraph Admin [Admin]
+    A[Start]
+    B[Log In]
+    C[User Management Page]
+    D[Select Modify User]
+    E[Select User]
+    F[Modify User]
+    G[Assign Privileges]
+  end
+
+  %% System Work
+  subgraph System [System]
+    H[Display Users]
+    I[Display User Information]
+    J[Update Privileges]
+    K[Notify User]
+  end
+
+  %% Process Flow
+  A --> B
+  B --> C
+  C --> D
+  %% Admin initiates modify user which triggers a system action:
+  D -- "Request user list" --> H
+  H -- "Return list" --> E
+  E -- "User selected" --> I
+  I -- "Show details" --> F
+  F --> G
+  %% Privileges assignment triggers system update and notification:
+  G -- "Submit privileges" --> J
+  J --> K
+  K --> L((End))
+```
+### Search for a Student
+```mermaid
+flowchart TD
+  %% Admin Work
+  subgraph Admin [Admin]
+    A[Start]
+    B[Log In]
+    C[User Management Page]
+    D[Select Modify User]
+    E[Select User]
+    F[Modify User]
+    G[Assign Privileges]
+  end
+
+  %% System Work
+  subgraph System [System]
+    H[Display Users]
+    I[Display User Information]
+    J[Update Privileges]
+    K[Notify User]
+  end
+
+  %% Process Flow
+  A --> B
+  B --> C
+  C --> D
+  %% Admin initiates modify user which triggers a system action:
+  D -- "Request user list" --> H
+  H -- "Return list" --> E
+  E -- "User selected" --> I
+  I -- "Show details" --> F
+  F --> G
+  %% Privileges assignment triggers system update and notification:
+  G -- "Submit privileges" --> J
+  J --> K
+  K --> L((End))
+```
+### Update an Attendance Record
+```mermaid
+```
