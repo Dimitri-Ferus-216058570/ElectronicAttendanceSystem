@@ -37,6 +37,8 @@ From class selection, it transitions to “Is Valid Class?” where a Yes branch
 Once students are selected, the teacher marks, saves, and submits the attendance.
 The submission triggers a system reaction—updating the database, which then confirms success and terminates the process.
 
+Linked to US-003 "Teacher Marks Attendance".
+
 ### Modify
 ```mermaid
 stateDiagram-v2
@@ -60,6 +62,8 @@ Update Error: If the system detects an error in the update.
 Key Transitions:
 The teacher then edits the record and submits the changes.
 A decision is made in the “Validate Update” state: if the data is correct the process moves to Save (and then ends), otherwise it branches to an error state to allow re‑entry of information before trying again.
+
+Linked to US-024 "Teacher modifies Attendance".
 
 ### Notification
 ```mermaid
@@ -91,6 +95,8 @@ After loading requisite data, the system prepares the notification
 A transition occurs from “Sending Notification” to either a “Notification Sent” (success) state or “Notification Failed” (failure)
 In the failure branch, the system may allow a retry (which loops back to reattempt the necessary steps) before final termination.
 
+Linked to US-009 "System send notifications to users".
+
 ### Privileges
 ```mermaid
 stateDiagram-v2
@@ -109,6 +115,8 @@ Assigned: Privileges are successfully assigned after verification.
 Key Transitions:
 The process starts at an unassigned state; an assignment request is then sent.
 From Verification, if conditions are met (valid user role, etc.), privileges are assigned; otherwise, the privilege remains revoked.
+
+Linked to US-002 "Administrator assigns User roles to users".
 
 ### Report
 ```mermaid
@@ -135,6 +143,8 @@ Key Transitions:
 After parameters are validated, data is retrieved and processed into a report.
 Once the report is ready, an export decision is made that branches into the final actions.
 
+Linked to US-008 "Administrator I want to generate Attendance Reports".
+
 ### TeacherSearch
 ```mermaid
 stateDiagram-v2
@@ -153,6 +163,9 @@ Results Display: If valid results are found (based on a valid user role check), 
 No Results Found: If no matching data is found, the teacher is prompted to re‑input search criteria.
 Key Transitions:
 A decision occurs in the system: if data is found, results are displayed; if not, the process loops back to allow re‑entry of search criteria.
+
+
+Linked to US-022 "Teacher searches for students".
 
 ### UserAccount
 ```mermaid
@@ -181,6 +194,9 @@ Key Transitions:
 From Idle, the flow splits: non‑registered users follow a Registration route (entering details, receiving verification) while registered users follow an Authentication route (inputting credentials).
 Both routes merge into the Verified state and then transition to a final “User Account” (active) state.
 
+
+Linked to US-018 "Administrator I want to register new users".
+
 ### ViewReport
 ```mermaid
 stateDiagram-v2
@@ -204,4 +220,7 @@ Key Transitions:
 The process starts with a report generation request.
 The admin selects the graph type and parameters.
 The graph is then displayed and the report is considered complete, ending the process.
+
+
+Linked to US-023 "Administrator I want to view Attendance reports in a graph".
 
