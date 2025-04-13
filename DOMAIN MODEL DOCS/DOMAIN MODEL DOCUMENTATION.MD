@@ -11,6 +11,7 @@
 
 ## Class Diagram
 
+```mermaid
 classDiagram
     class User {
         - userId
@@ -103,3 +104,4 @@ classDiagram
     Administrator --> Notification : sends
     ClassGroup --> Student : belongs to
     ClassGroup --> Teacher : supervises
+```
