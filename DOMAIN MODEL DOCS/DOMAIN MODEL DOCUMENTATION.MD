@@ -14,95 +14,99 @@
 ```mermaid
 classDiagram
     class User {
-        - userId
-        - name
-        - email
-        - password
-        + logIn()
-        + logOut()
-        + viewProfile()
-    }
-    
-    class Student {
-        - studentId
-        - grade
-        - classGroupId
-        - parentId
-        - address
-        - dob
-        + viewAttendanceReport()
-        + viewProfile()
+        +userId
+        +userName
+        +userEmail
+        +role
+        +password
+        +logIn()
+        +login()
+        +logout()
+        +viewProfile()
     }
 
     class Teacher {
-        - teacherId
-        - name
-        - address
-        - email
-        - password
-        - classGroup
-        + markAttendance()
-        + updateAttendance()
-        + searchStudent()
-        + viewAttendanceReport()
-        + viewGraph()
+        +teacherId
+        +name
+        +email
+        +address
+        +password
+        +class
+        +markAttendance()
+        +updateAttendance()
+        +searchStudent()
+        +viewAttendanceReport()
+        +viewGraph()
     }
 
     class Administrator {
-        - adminId
-        - name
-        - address
-        - email
-        - password
-        + registerUser()
-        + deleteUser()
-        + modifyAttendance()
-        + sendNotification()
-        + searchStudent()
-        + viewAttendanceReport()
-        + viewGraph()
-        + compileReport()
+        +adminId
+        +name
+        +address
+        +email
+        +password
+        +registerUser()
+        +deleteUser()
+        +modifyAttendance()
+        +sendNotification()
+        +viewAttendanceReport()
+        +viewGraph()
+        +searchStudent()
+        +compileReport()
+    }
+
+    class Student {
+        +studentId
+        +grade
+        +classGroup
+        +parentId
+        +address
+        +dob
+        +viewAttendanceReport()
+        +viewProfile()
     }
 
     class Attendance {
-        - attendanceId
-        - teacherId
-        - studentId
-        - date
-        + markAttendance()
-        + updateAttendance()
-        + getAttendanceRange()
+        +attendanceId
+        +teacherId
+        +studentId
+        +date
+        +markAttendance()
+        +updateAttendance()
+        +getAttendanceRange()
     }
 
     class Report {
-        - reportId
-        - attendanceId
-        + generateReport()
-        + exportReport()
-        + viewGraph()
+        +reportId
+        +attendanceId
+        +generateReport()
+        +exportReport()
+        +viewGraph()
     }
 
     class Notification {
-        - notificationId
-        - recipientId
-        - message
-        - dateSent
-        + sendNotification()
+        +notificationId
+        +recipientId
+        +message
+        +dateSent
+        +sendNotification()
     }
 
-    class ClassGroup {
-        - classGroupId
-        - className
-        - teacherId
-        - gradeId
-    }
+    %% Inheritance
+    Teacher --|> User
+    Administrator --|> User
+    Student --|> User
 
-    User <|-- Student : inherits
-    User <|--  Administrator : inherits
-    User <|-- Teacher : inherits
-    Teacher --> Attendance : marks
-    Attendance --> Report : generates
-    Administrator --> Notification : sends
-    ClassGroup --> Student : belongs to
-    ClassGroup --> Teacher : supervises
+    %% Relationships with cardinalities
+    Teacher "1" -- "0..*" Student : marks attendance
+    Teacher "1" -- "0..*" Attendance : marks/updates
+    Administrator "1" -- "0..*" User : manages
+    Administrator "1" -- "0..*" Attendance : manages
+    Administrator "1" -- "0..*" Report : compiles
+    Administrator "1" -- "0..*" Notification : sends
+    Student "1" -- "0..*" Report : views
+    Attendance "1" -- "1" Student : belongs to
+    Report "1" -- "1" Attendance : based on
+    Notification "1" -- "1" Student : sent to
+
 ```
