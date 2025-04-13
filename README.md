@@ -5,5 +5,5 @@ In education, accurately tracking student attendance is crucial for monotoring a
 ## Link to Activity and state transition diagrams folder:
 [State_Transition_Activity_Diagrams](STATE_AND_ACTIVITY_DIAGRAMS/)
 
-## Link to Domain Model Documentation
+## Link to Domain Model Documentation:
 [Domian_Model_Documentation](DOMAIN MODEL DOCS/).
