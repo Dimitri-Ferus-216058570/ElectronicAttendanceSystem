@@ -98,7 +98,8 @@ classDiagram
     }
 
     User <|-- Student : inherits
-    Administrator --|> Teacher : manages
+    User <|--  Administrator : inherits
+    User <|-- Teacher : inherits
     Teacher --> Attendance : marks
     Attendance --> Report : generates
     Administrator --> Notification : sends
