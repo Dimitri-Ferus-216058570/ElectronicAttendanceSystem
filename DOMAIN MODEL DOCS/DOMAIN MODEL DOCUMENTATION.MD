@@ -33,7 +33,7 @@ classDiagram
         + viewAttendanceReport()
         + viewProfile()
     }
-    
+
     class Teacher {
         - teacherId
         - name
@@ -73,7 +73,7 @@ classDiagram
         + updateAttendance()
         + getAttendanceRange()
     }
-    
+
     class Report {
         - reportId
         - attendanceId
@@ -81,15 +81,15 @@ classDiagram
         + exportReport()
         + viewGraph()
     }
-    
+
     class Notification {
-        - notificationtId
+        - notificationId
         - recipientId
         - message
         - dateSent
         + sendNotification()
     }
-    
+
     class ClassGroup {
         - classGroupId
         - className
@@ -98,7 +98,7 @@ classDiagram
     }
 
     User <|-- Student : inherits
-    Administrator --> Teacher : manages
+    Administrator --|> Teacher : manages
     Teacher --> Attendance : marks
     Attendance --> Report : generates
     Administrator --> Notification : sends
