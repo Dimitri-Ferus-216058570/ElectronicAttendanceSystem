@@ -1,6 +1,6 @@
 ## Reasoning for Patterns
 
-1.The Prototype Pattern was chosen for attendance marking due to the fact that these templates will be reused and cloning is more efficient than creating them from scratch. It will go a long way in improving performance.
+1. The Prototype Pattern was chosen for attendance marking due to the fact that these templates will be reused and cloning is more efficient than creating them from scratch. It will go a long way in improving performance.
 
 2. The Abstract Factory Pattern was chosen fore Notifications because if other ways of communication needs to be added the patterns allows for dynamic choices between different types of notifications.
    
