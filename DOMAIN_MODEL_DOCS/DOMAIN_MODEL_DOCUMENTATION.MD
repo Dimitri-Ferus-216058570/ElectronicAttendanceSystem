@@ -115,32 +115,85 @@ classDiagram
 
 ```mermaid
 classDiagram
-    class Repository~T, ID~ {
-        +save(T entity)
-        +findById(ID id)
-        +findAll()
-        +delete(ID id)
-    }
 
-    class StudentRepository
-    class TeacherRepository
-    class AdministratorRepository
-    class InMemoryStudentRepository
-    class InMemoryTeacherRepository
-    class InMemoryAdministratorRepository
-    class FileSystemAdministratorRepository
-    class DatabaseAdministratorRepository
-    class RepositoryFactory
+class Repository~T, ID~ {
+    +save(T entity)
+    +findById(ID id)
+    +findAll()
+    +delete(ID id)
+}
 
-    Repository <|-- StudentRepository
-    Repository <|-- TeacherRepository
-    Repository <|-- AdministratorRepository
+class StudentRepository {
+    +save(Student student)
+    +findById(Integer id)
+    +findAll()
+    +delete(Integer id)
+}
 
-    StudentRepository <|-- InMemoryStudentRepository
-    TeacherRepository <|-- InMemoryTeacherRepository
-    AdministratorRepository <|-- InMemoryAdministratorRepository
-    AdministratorRepository <|-- FileSystemAdministratorRepository
-    AdministratorRepository <|-- DatabaseAdministratorRepository
+class TeacherRepository {
+    +save(Teacher teacher)
+    +findById(Integer id)
+    +findAll()
+    +delete(Integer id)
+}
+
+class AdministratorRepository {
+    +save(Administrator admin)
+    +findById(Integer id)
+    +findAll()
+    +delete(Integer id)
+}
+
+class InMemoryStudentRepository {
+    +save(Student student)
+    +findById(Integer id)
+    +findAll()
+    +delete(Integer id)
+}
+
+class InMemoryTeacherRepository {
+    +save(Teacher teacher)
+    +findById(Integer id)
+    +findAll()
+    +delete(Integer id)
+}
+
+class InMemoryAdministratorRepository {
+    +save(Administrator admin)
+    +findById(Integer id)
+    +findAll()
+    +delete(Integer id)
+}
+
+class FileSystemAdministratorRepository {
+    +save(Administrator admin)
+    +findById(Integer id)
+    +findAll()
+    +delete(Integer id)
+}
+
+class DatabaseAdministratorRepository {
+    +save(Administrator admin)
+    +findById(Integer id)
+    +findAll()
+    +delete(Integer id)
+}
+
+class RepositoryFactory {
+    +getStudentRepository(storageType)
+    +getTeacherRepository(storageType)
+    +getAdministratorRepository(storageType)
+}
+
+Repository~T, ID~ <|-- StudentRepository
+Repository~T, ID~ <|-- TeacherRepository
+Repository~T, ID~ <|-- AdministratorRepository
+
+StudentRepository <|-- InMemoryStudentRepository
+TeacherRepository <|-- InMemoryTeacherRepository
+AdministratorRepository <|-- InMemoryAdministratorRepository
+AdministratorRepository <|-- FileSystemAdministratorRepository
+AdministratorRepository <|-- DatabaseAdministratorRepository
 ```
 
 
