@@ -165,20 +165,6 @@ class InMemoryAdministratorRepository {
     +delete(Integer id)
 }
 
-class FileSystemAdministratorRepository {
-    +save(Administrator admin)
-    +findById(Integer id)
-    +findAll()
-    +delete(Integer id)
-}
-
-class DatabaseAdministratorRepository {
-    +save(Administrator admin)
-    +findById(Integer id)
-    +findAll()
-    +delete(Integer id)
-}
-
 class RepositoryFactory {
     +getStudentRepository(storageType)
     +getTeacherRepository(storageType)
@@ -192,8 +178,6 @@ Repository~T, ID~ <|-- AdministratorRepository
 StudentRepository <|-- InMemoryStudentRepository
 TeacherRepository <|-- InMemoryTeacherRepository
 AdministratorRepository <|-- InMemoryAdministratorRepository
-AdministratorRepository <|-- FileSystemAdministratorRepository
-AdministratorRepository <|-- DatabaseAdministratorRepository
 ```
 
 
