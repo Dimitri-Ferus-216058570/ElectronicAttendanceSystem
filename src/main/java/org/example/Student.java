@@ -1,6 +1,6 @@
 package org.example;
 
-class Student extends User {
+public class Student extends User {
     private int studentId;
     private String grade;
     private int classGroupId;
@@ -15,6 +15,54 @@ class Student extends User {
         this.classGroupId = classGroupId;
         this.parentId = parentId;
         this.address = address;
+        this.dob = dob;
+    }
+
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
+    }
+
+    public String getGrade() {
+        return grade;
+    }
+
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
+
+    public int getClassGroupId() {
+        return classGroupId;
+    }
+
+    public void setClassGroupId(int classGroupId) {
+        this.classGroupId = classGroupId;
+    }
+
+    public int getParentId() {
+        return parentId;
+    }
+
+    public void setParentId(int parentId) {
+        this.parentId = parentId;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
