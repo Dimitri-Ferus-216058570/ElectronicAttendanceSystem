@@ -111,3 +111,36 @@ classDiagram
 
 ```
 
+## Adding Repository Logic
+
+```mermaid
+classDiagram
+    class Repository~T, ID~ {
+        +save(T entity)
+        +findById(ID id)
+        +findAll()
+        +delete(ID id)
+    }
+
+    class StudentRepository
+    class TeacherRepository
+    class AdministratorRepository
+    class InMemoryStudentRepository
+    class InMemoryTeacherRepository
+    class InMemoryAdministratorRepository
+    class FileSystemAdministratorRepository
+    class DatabaseAdministratorRepository
+    class RepositoryFactory
+
+    Repository <|-- StudentRepository
+    Repository <|-- TeacherRepository
+    Repository <|-- AdministratorRepository
+
+    StudentRepository <|-- InMemoryStudentRepository
+    TeacherRepository <|-- InMemoryTeacherRepository
+    AdministratorRepository <|-- InMemoryAdministratorRepository
+    AdministratorRepository <|-- FileSystemAdministratorRepository
+    AdministratorRepository <|-- DatabaseAdministratorRepository
+```
+
+
