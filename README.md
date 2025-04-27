@@ -10,7 +10,7 @@ In education, accurately tracking student attendance is crucial for monotoring a
 
 ## Justification for Generics in Repository 
 
-Choosing the generics eliminates the need to write CRUD methods for every class. This also ensures that all entities behave in a consistent manner and when adding new entities the will be no need to rewrite the logic. Another reason is that new methods can be added in one place and all other classes will inherit it automatically. 
+Choosing the generics eliminates the need to write CRUD methods for every class. This also ensures that all entities behave in a consistent manner and when adding new entities there will be no need to rewrite the logic. Another reason is that new methods can be added in one place and all other classes will inherit it automatically. 
 
 ## Justification for Factory over DI 
 
