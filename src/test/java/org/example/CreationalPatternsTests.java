@@ -1,23 +1,20 @@
 package org.example;
 
-import creational_patterns.abstract_factory.EmailNotification;
-import creational_patterns.abstract_factory.EmailNotificationFactory;
-import creational_patterns.abstract_factory.Notification;
-import creational_patterns.abstract_factory.NotificationFactory;
-import creational_patterns.builder.Report;
-import creational_patterns.factory_method.*;
-import creational_patterns.prototype.AttendanceRecordTemplate;
-import creational_patterns.prototype.AttendanceTemplateCache;
-import creational_patterns.simple_factory.AttendanceParent;
-import creational_patterns.simple_factory.AttendanceTeacher;
-import creational_patterns.simple_factory.AttendanceUser;
-import creational_patterns.simple_factory.UserFactory;
-import creational_patterns.singleton.DatabaseConnection;
+import org.example.creational_patterns.abstract_factory.EmailNotification;
+import org.example.creational_patterns.abstract_factory.EmailNotificationFactory;
+import org.example.creational_patterns.abstract_factory.Notification;
+import org.example.creational_patterns.abstract_factory.NotificationFactory;
+import org.example.creational_patterns.builder.Report;
+import org.example.creational_patterns.factory_method.*;
+import org.example.creational_patterns.prototype.AttendanceRecordTemplate;
+import org.example.creational_patterns.prototype.AttendanceTemplateCache;
+import org.example.creational_patterns.simple_factory.AttendanceParent;
+import org.example.creational_patterns.simple_factory.AttendanceTeacher;
+import org.example.creational_patterns.simple_factory.AttendanceUser;
+import org.example.creational_patterns.simple_factory.UserFactory;
+import org.example.creational_patterns.singleton.DatabaseConnection;
 import junit.framework.TestCase;
 import org.junit.Test;
-import junit.framework.TestSuite;
-
-import static org.junit.Assert.*;
 
 public class CreationalPatternsTests extends TestCase {
 

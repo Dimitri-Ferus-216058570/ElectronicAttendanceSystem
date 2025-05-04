@@ -2,8 +2,7 @@ package org.example.inmemorytest;
 
 import org.example.Student;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
-import repository.inmemory.InMemoryStudentRepository;
+import org.example.repository.inmemory.InMemoryStudentRepository;
 
 import java.util.List;
 
