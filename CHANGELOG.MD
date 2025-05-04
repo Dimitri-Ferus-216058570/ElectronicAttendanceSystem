@@ -1,3 +1,4 @@
+## Patterns
 All Creational Patterns were implemented and the Project board was updated. Methods behaviour has not yet been completed, but will be added as the functions are completed. Some changes were made as to how reports will be constructed, the attendance marking function has also been altered in order to implement the logic of the design patterns.
 
 ## API
